@@ -14,7 +14,7 @@
     [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}"
   >
     <label for="email">Email:</label>
-    <input id="email" type="email" formControlName="email">
+    <input id="email" type="email" formControlName="email" placeholder="for inspect admin-page input login: v@mail.ru">
     <div
       *ngIf="form.get('email').touched && form.get('email').invalid"
       class="validation">
@@ -22,7 +22,7 @@
         Input email
       </small>
       <small *ngIf="form.get('email').errors.email">
-        Field email have to be email
+        Email is incorrect
       </small>
     </div>
   </div>
@@ -32,7 +32,7 @@
     [ngClass]="{invalid: form.get('password').touched && form.get('password').invalid}"
   >
     <label for="password">Password:</label>
-    <input id="password" type="password" formControlName="password">
+    <input id="password" type="password" formControlName="password" placeholder="password for v@mail.ru: 123456">
     <div
       *ngIf="form.get('password').touched && form.get('password').invalid"
       class="validation"

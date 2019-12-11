@@ -266,7 +266,7 @@ table th {
 
   &.main {
     justify-content: center;
-    border-bottom: 1px solid var(--dark-color);
+    background: linear-gradient(rgba(199, 199, 199, 0.63), #dcdcdc, #fff);
   }
 
   ul {
@@ -274,15 +274,16 @@ table th {
   }
 
   li.active a {
-    color: var(--dark-color);
+    color: #ffffff;
     font-weight: bold;
     cursor: default;
   }
 
   a {
-    color: #fff;
+    color: #b8b8b8;
     padding: 0.45rem;
     margin: 0 0.25rem;
+    font-weight: 200;
 
     &:hover {
       color: var(--light-color);
